@@ -1,0 +1,23 @@
+@import './../../commontypes/variables.scss';
+
+.dashboardItemContainer{
+    display: grid;
+    gap: 10px;
+    &-heading{
+        // background-color: red;
+        color: $text-color-4;
+        font-weight: bolder;
+        font-size: large;
+    }
+    &-children{
+        @include shadow-design-xs;
+        background-color: $primary-color;
+        width: fit-content;
+        border-radius: 4px;
+        @include padding-x(15px);
+        @include padding-y(15px);
+
+
+        
+    }
+}

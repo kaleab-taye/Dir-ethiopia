@@ -1,0 +1,25 @@
+@import "./../../commontypes/variables.scss";
+
+.side-nav-container{
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 25px;
+
+    @include horizontally-center;
+    
+    &-items{
+        margin-bottom: auto;
+        grid-gap: 25px;
+        display: grid;
+    }
+
+    &-footer{
+        margin-top: auto;
+    }
+    
+}
+.auto-width-and-height{
+    width: auto;
+    height: auto;
+}

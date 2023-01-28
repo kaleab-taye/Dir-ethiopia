@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/any.proto";
+
+
+service Hrm {
+    rpc pingServer(PingRequest) returns (PingResponse) {}
+}
+
+message PingRequest {
+    string pingString = 1;
+}
+message PingResponse {
+    string result = 1;
+}

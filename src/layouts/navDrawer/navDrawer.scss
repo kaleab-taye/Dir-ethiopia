@@ -1,0 +1,28 @@
+@import "./../../commontypes/variables.scss";
+
+
+.navDrawer-container{
+    display: grid;
+
+    @include breakpoint('small'){
+        padding-top: 2px;
+        margin-right: 10px;
+    }
+    &-drawerToggler{
+
+        color: $primary-color;
+        border-radius: 0px 1px 1px 0px;
+        cursor: pointer;
+    
+        width: 30px;
+        height: 24px;
+        @include vertically-center();
+    }
+    
+    &-navComponents{
+        display: grid;
+        height: 100%;
+        padding-left:10px ;
+        padding-right:10px ;
+    }
+}

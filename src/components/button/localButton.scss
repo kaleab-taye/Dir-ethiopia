@@ -1,0 +1,27 @@
+@import './../../commontypes/variables.scss';
+
+.buttonComponent {
+    // adding the three button variants
+    &-danger{
+
+    }
+    &-info{
+
+    }
+    &-success{
+        
+    }
+    border: 2px red solid;
+    color: red;
+    @include padding-y(8px);
+    @include padding-x(10px);
+    border-radius: 4px;
+
+
+    &-content{
+        font-size: medium;
+        @include breakpoint('small'){
+            font-size: small;
+        }
+    }
+}

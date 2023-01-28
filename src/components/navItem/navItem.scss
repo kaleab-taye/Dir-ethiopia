@@ -1,0 +1,49 @@
+@import "./../../commontypes/variables.scss";
+
+.nav-link{
+    text-decoration: none;
+
+    // the bellow will identify the selected navigation item from unselected
+    &-selected{
+        color: $accent-color;
+    }
+    &-unselected{
+        color: $text-color-2;
+    }
+
+    &-item{
+    
+        display: grid;
+        grid-template-columns: 30px auto;
+        gap: 12px;
+
+        @include breakpoint('small'){
+            gap: 8;
+        }
+    
+        &-icon{
+            width: 28px;
+            height: 28px;
+            padding-left: 2px;
+            padding-right: 2px;
+            display: grid;
+
+            @include vertically-center;
+            @include breakpoint('small'){
+                width: 25px;
+                height: 25px;
+            }
+            
+        }
+        &-text{
+            text-align: start;
+            font-size: large;
+            font-weight:500;
+
+            @include vertically-center;
+            @include breakpoint('small'){
+                font-size: medium;
+            }
+        }
+    }
+}

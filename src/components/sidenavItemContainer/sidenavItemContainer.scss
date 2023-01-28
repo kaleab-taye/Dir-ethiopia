@@ -1,0 +1,31 @@
+@import './../../commontypes/variables.scss';
+
+.sidenavItemContainer{
+    background-color: $primary-color;
+    @include padding-x(6px);
+    @include padding-y(6px);
+    border-radius: 4px;
+
+    &-container{
+        
+        border:  $accent-color 1px solid;
+        border-radius: 3px;
+    }
+    
+
+    &-heading{
+        @include padding-x(5px);
+        @include padding-y(5px);
+
+        background-color: $accent-color;
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 15px;
+        
+    }
+    &-children{
+        @include padding-x(12px);
+        @include padding-y(10px);
+
+    }
+}

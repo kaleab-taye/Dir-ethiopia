@@ -1,0 +1,20 @@
+@import "./../../commontypes/variables.scss";
+
+.viewport-header-container{
+
+    &-text{
+        color: $accent-color;
+        font-weight: bolder;
+        font-size: xx-large;
+        text-transform: uppercase;
+        margin-left: 35px;
+        margin-right: 35px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        @include breakpoint('small'){
+            font-size: x-large;
+        }
+
+    }
+}

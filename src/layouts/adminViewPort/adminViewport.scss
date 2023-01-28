@@ -1,0 +1,41 @@
+@import "./../../commontypes/variables.scss";
+
+.adminViewport{
+    &-mainContent{
+        @include margin-x(2px);
+
+        
+    }
+    &-mainContent-withRightSideBar{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        @include breakpoint('small'){
+            grid-template-columns: auto;
+
+        }
+        // background-color: yellow;
+    }
+    &-mainContent-withoutRightSideBar{
+        @include margin-x(6px);
+    }
+
+    &-mainContent-center{
+
+        &-freeChildren{
+            @include margin-x(17px);
+        }
+        // column-span: 2;
+    }
+    &-mainContent-side{
+        @include breakpoint('small'){
+            display: none;
+        }
+        position: sticky;
+        top: 0;
+        // background-color: green;
+    }
+
+    &-bottomSpacer{
+        height: 45px;
+    }
+}

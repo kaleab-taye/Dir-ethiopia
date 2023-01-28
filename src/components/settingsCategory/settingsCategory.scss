@@ -1,0 +1,37 @@
+@import './../../commontypes/variables.scss';
+
+.settings-settingsCategory{
+
+    // border: 4px red solid;
+    display: grid;
+    gap: 15px;
+
+    @include breakpoint('small'){
+
+        display: grid;
+        gap: 12px;
+
+    }
+
+    &-header{
+        color: $accent-color;
+        font-weight: bold;
+        font-size: x-large;
+        border-bottom: 1px $text-color-3 solid;
+
+        @include padding-y(12px);
+
+        @include breakpoint('small'){
+
+            font-size: large;
+            @include padding-y(8px);
+
+        }
+    }
+
+    &-body{
+        color: $text-color-2;
+
+    }
+}
+

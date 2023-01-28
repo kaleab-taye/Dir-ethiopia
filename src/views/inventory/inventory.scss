@@ -1,0 +1,40 @@
+@import './../../commontypes/variables.scss';
+
+.inventoryPage{
+    &-content{
+        display: grid;
+        gap: 15px;
+
+        @include breakpoint('large'){
+            gap: 25px;
+        }
+
+        &-header{
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+        }
+    }
+    &-sidebar{
+        display: grid;
+        gap: 12px;
+
+        &-filterInventory{
+            // display: flex;
+
+            // grid-template-columns: auto;
+            // grid-template-rows: auto;
+            // gap: 20px;
+            margin-top: 0;
+            &-item{
+                color: $text-color-2;
+                // background-color: red;
+                &-label{
+                    font-size: 14px;
+
+                }
+            }
+        }
+    }
+}
+
